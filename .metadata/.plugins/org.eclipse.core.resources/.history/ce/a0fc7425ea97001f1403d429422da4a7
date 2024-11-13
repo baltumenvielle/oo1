@@ -1,0 +1,17 @@
+package ar.edu.unlp.info.oo1.ej13_clienteCorreo;
+
+public class ClienteDeCorreo {
+	private Carpeta inbox;
+	
+	public void recibir(Email email) {
+		this.inbox.mover(email, inbox);
+	}
+	
+	public Email buscar(String texto) {
+		
+	}
+	
+	public int espacioOcupado() {
+		
+	}
+}

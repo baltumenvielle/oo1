@@ -1,0 +1,8 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+public class Vehiculo {
+	private Conductor dueño;
+	private String descripcion;
+	private int capacidad, añoFabricacion;
+	private double valorMercado;
+}

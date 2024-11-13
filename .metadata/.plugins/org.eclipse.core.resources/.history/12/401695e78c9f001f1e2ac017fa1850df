@@ -1,0 +1,9 @@
+package ar.edu.unlp.info.oo1.ej19_servicioPaquetes;
+
+import java.time.LocalDate;
+
+public interface Envio {
+	LocalDate fechaDespacho;
+	String direccionOrigen, direccionDestino;
+	double peso;
+}

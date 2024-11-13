@@ -1,0 +1,24 @@
+package ar.edu.unlp.info.oo1.ej20_liquidacion;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class Empleado {
+	private String nombre, apellido;
+	private int CUIL;
+	private LocalDate fechaNacimiento;
+	private boolean hijosACargo;
+	List<Contrato> contratos;
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public String getApellido() {
+		return apellido;
+	}
+	public int getCUIL() {
+		return CUIL;
+	}
+	
+	
+}

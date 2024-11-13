@@ -1,0 +1,10 @@
+package ar.edu.unlp.info.oo1.ej19_servicioPaquetes;
+
+public class ClienteCorporativo extends Cliente {
+	private int CUIT;
+	
+	public ClienteCorporativo(String nombre, String direccion, int DNI) {
+		super(nombre, direccion);
+		this.DNI = DNI;
+	}
+}

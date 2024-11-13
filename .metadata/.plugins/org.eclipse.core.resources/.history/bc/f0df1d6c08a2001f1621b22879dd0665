@@ -1,0 +1,11 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+public class Pasajero extends Usuario {
+	public boolean registrarseAViaje(Viaje viaje) {
+		if (this.saldo > 0) {
+			viaje.agregarPasajero(this);
+			return true;
+		}
+		return false;
+	}
+}

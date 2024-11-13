@@ -1,0 +1,25 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+import java.time.LocalDate;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Viaje {
+	private String origen, destino;
+	private double costoTotal;
+	private Vehiculo vehiculo;
+	private LocalDate fechaViaje;
+	private List<Usuario> pasajeros;
+	
+	public Viaje(String origen, String destino, double costoTotal, Vehiculo vehiculo, LocalDate fechaViaje, Conductor conductor) {
+		this.origen = origen;
+		this.destino = destino;
+		this.costoTotal = costoTotal;
+		this.vehiculo = vehiculo;
+		this.fechaViaje = fechaViaje;
+		pasajeros = new LinkedList<Usuario>();
+		pasajeros.add(conductor);
+	}
+	
+	
+}

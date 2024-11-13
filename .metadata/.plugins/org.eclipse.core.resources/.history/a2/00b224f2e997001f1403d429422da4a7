@@ -1,0 +1,13 @@
+package ar.edu.unlp.info.oo1.ej13_clienteCorreo;
+
+public class Carpeta {
+	private String nombre;
+	
+	public String getNombre() {
+		return this.nombre;
+	}
+	
+	public void mover(Email email, Carpeta destino) {
+		
+	}
+}

@@ -1,0 +1,13 @@
+package ar.edu.unlp.info.oo1.ej13_clienteCorreo;
+
+public class Email {
+	private String titulo, cuerpo;
+	
+	public String getTitulo() {
+		return this.titulo;
+	}
+	
+	public String getCuerpo() {
+		return this.cuerpo;
+	}
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="H:\Facultad\2\AyED\ej15_distribuidoraElectrica"/>
+			<item value="H:\Facultad\2\AyED\ej13_clienteCorreo"/>
+			<item value="H:\Facultad\2\AyED\ej12_volumenYSuperficie"/>
+			<item value="H:\Facultad\2\AyED\ej11_elInversor"/>
+			<item value="H:\Facultad\2\AyED\ej10_jobScheduler"/>
+			<item value="H:\Facultad\2\AyED\balanzaElectronica"/>
+			<item value="H:\Facultad\2\OO1\ejercicio2"/>
+			<item value="H:\Facultad\2\OO1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="defaultLocal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="ar.edu.unlp.info.oo1.ej24_poolCar"/>
+			<item value="ar.edu.unlp.info.oo1.ej20_liquidacion"/>
+			<item value="ar.edu.unlp.info.oo1.ej19_servicioPaquetes"/>
+			<item value="ar.edu.unlp.info.oo1.ej17_alquilerPropiedades"/>
+			<item value="ar.edu.unlp.info.oo1.ej15_distribuidoraElectrica"/>
+		</list>
+		<list key="groupId">
+			<item value="ar.edu.unlp.info.oo1"/>
+		</list>
+		<list key="artifactId">
+			<item value="ej24_poolCar"/>
+			<item value="ej20_liquidacion"/>
+			<item value="ej19_servicioPaquetes"/>
+			<item value="ej17_alquilerPropiedades"/>
+			<item value="ej15_distribuidoraElectrica"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="H:\Facultad\2\OO1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeGroupId">
+			<item value="io.github.unlp-oo"/>
+			<item value="ar.edu.unlp.info.oo1"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="archetype"/>
+			<item value="objetos-uno"/>
+		</list>
+		<list key="archetypeVersion">
+			<item value="1.0.0"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+			<item value="https://github.com/edu-unlp-info-objetos/oo1/blob/main/objetos-uno-archetype/objetos-uno-archetype-1.0.0.jar?raw=true"/>
+		</list>
+	</section>
+</section>

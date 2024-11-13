@@ -1,0 +1,20 @@
+package ar.edu.unlp.info.oo1.ej19_servicioPaquetes;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Empresa {
+	private List<Cliente> clientes;
+	
+	public Empresa() {
+		clientes = new LinkedList<Cliente>();
+	}
+	
+	public void agregarEnvio(Cliente cliente, Envio envio) {
+		for (Cliente cli: clientes) {
+			if (cli == cliente) {
+				cli.agregarEnvio(envio)
+			}
+		}
+	}
+}

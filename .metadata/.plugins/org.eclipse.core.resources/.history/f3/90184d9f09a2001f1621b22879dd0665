@@ -1,0 +1,11 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+public class Conductor extends Usuario {
+	private Vehiculo vehiculo;
+
+	@Override
+	public void descontarSueldo(double costo) {
+		// TODO Auto-generated method stub
+		
+	}
+}

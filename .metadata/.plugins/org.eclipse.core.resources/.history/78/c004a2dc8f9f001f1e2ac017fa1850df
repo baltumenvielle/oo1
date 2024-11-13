@@ -1,0 +1,16 @@
+package ar.edu.unlp.info.oo1.ej19_servicioPaquetes;
+
+import java.time.LocalDate;
+
+public class EnvioInternacional extends Envio {
+
+	public EnvioInternacional(LocalDate fechaDespacho, String direccionOrigen, String direccionDestino, double peso) {
+		super(fechaDespacho, direccionOrigen, direccionDestino, peso);
+	}
+
+	@Override
+	public double montoAPagar() {
+		return 0;
+	}
+
+}

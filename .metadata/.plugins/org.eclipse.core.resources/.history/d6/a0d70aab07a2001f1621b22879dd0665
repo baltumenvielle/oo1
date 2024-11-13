@@ -1,0 +1,7 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+public class Pasajero extends Usuario {
+	public boolean registrarseAViaje(Viaje viaje) {
+		return false;
+	}
+}

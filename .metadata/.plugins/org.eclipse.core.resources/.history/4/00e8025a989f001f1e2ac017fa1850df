@@ -1,0 +1,11 @@
+package ar.edu.unlp.info.oo1.ej20_liquidacion;
+
+public class ContratoDePlanta extends Contrato {
+	private double sueldo, sueldoConyuge, sueldoHijos;
+
+	@Override
+	public boolean estaVigente() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}

@@ -1,0 +1,9 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+public class Viaje {
+	private String origen, destino;
+	private double costoTotal;
+	private Vehiculo vehiculo;
+	private LocalDate fechaViaje;
+	private List<Pasajero> pasajeros;
+}

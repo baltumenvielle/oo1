@@ -1,0 +1,10 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+import java.time.LocalDate;
+
+public class Pasajero extends Usuario {
+	public boolean registrarseAViaje(Viaje viaje) {
+		if (viaje.hayCapacidad() && LocalDate.now().isBefore(viaje.getFechaViaje().minus(2))) 
+		return false;
+	}
+}

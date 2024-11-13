@@ -1,0 +1,46 @@
+package ar.edu.unlp.info.oo1.ej20_liquidacion;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class Empleado {
+	private String nombre, apellido;
+	private int CUIL;
+	private LocalDate fechaNacimiento;
+	private boolean hijosACargo;
+	List<Contrato> contratos;
+	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public String getApellido() {
+		return apellido;
+	}
+	
+	public int getCUIL() {
+		return CUIL;
+	}
+	
+	public int getAntiguedad() {
+		Contrato contrato = contratos.stream()
+											.min((c1, c2) -> c1.getFechaInicio().compareTo(c2.getFechaInicio()))
+											.orElse(null);
+		return LocalDate.now().getYear() - contrato.getFechaInicio().getYear();
+	}
+	
+	public Contrato getContratoVigente() {
+		return contratos.stream()
+					.filter(contrato -> contrato.estaVigente())
+					.findFirst()
+					.orElse(null);
+	}
+	
+	public double calcularMonto() {
+		Contrato contrato = this.getContratoVigente();
+		int antiguedad = this.getAntiguedad();
+		if (antiguedad < 5) return contrato.calcularMonto();
+		else if (antiguedad > 5 && antiguedad < 10) return contrato.calcularMonto() * 0.3;
+	}
+	
+}

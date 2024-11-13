@@ -1,0 +1,31 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class Pasajero extends Usuario {
+	private List<Viaje> viajes;
+	
+	public void registrarseAViaje(Viaje viaje) {
+		if (this.saldo > 0) viaje.agregarPasajero(this);
+	}
+	
+	private boolean hizoViajes() {
+		return viajes.size() > 0;
+	}
+	
+	@Override
+	public void descontarSaldo(double costo) {
+		if (this.hizoViajes()) costo -= 500;
+		this.saldo -= costo;
+	}
+
+	@Override
+	public double calcularComision(double monto) {
+		Viaje vi = viajes.stream()
+		.filter(viaje -> viaje.menos30Dias(LocalDate.now()))
+		.findAny().orElse(null);
+		
+		if (vi != null) return monto * 0.1;
+	}
+}

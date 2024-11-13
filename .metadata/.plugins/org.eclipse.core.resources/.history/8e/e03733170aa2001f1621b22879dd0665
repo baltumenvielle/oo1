@@ -1,0 +1,9 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+public abstract class Usuario {
+	private String nombre;
+	protected double saldo;
+	
+	public abstract void descontarSueldo(double costo);
+	public abstract void cargarSaldo(double saldo);
+}

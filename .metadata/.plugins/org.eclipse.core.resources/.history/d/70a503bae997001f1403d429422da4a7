@@ -1,0 +1,15 @@
+package ar.edu.unlp.info.oo1.ej13_clienteCorreo;
+
+public class ClienteDeCorreo {
+	public void recibir(Email email) {
+		
+	}
+	
+	public Email buscar(String texto) {
+		
+	}
+	
+	public int espacioOcupado() {
+		
+	}
+}

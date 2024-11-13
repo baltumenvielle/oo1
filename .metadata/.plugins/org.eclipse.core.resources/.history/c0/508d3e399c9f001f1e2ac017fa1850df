@@ -1,0 +1,22 @@
+package ar.edu.unlp.info.oo1.ej20_liquidacion;
+
+import java.time.LocalDate;
+
+public class ContratoDePlanta extends Contrato {
+	private double sueldo, montoConyuge, montoHijos;
+
+	public ContratoDePlanta(LocalDate fechaInicio) {
+		super(fechaInicio);
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public boolean estaVigente() {
+		return true;
+	}
+	
+	@Override
+	public double calcularMonto() {
+		return this.sueldo + this.montoConyuge + this.montoHijos;
+	}
+}

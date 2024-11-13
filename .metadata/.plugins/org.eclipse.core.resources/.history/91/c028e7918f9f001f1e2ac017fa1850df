@@ -1,0 +1,18 @@
+package ar.edu.unlp.info.oo1.ej19_servicioPaquetes;
+
+import java.time.LocalDate;
+
+public abstract class Envio {
+	private LocalDate fechaDespacho;
+	private String direccionOrigen, direccionDestino;
+	private double peso;
+	
+	public Envio(LocalDate fechaDespacho, String direccionOrigen, String direccionDestino, double peso) {
+		this.fechaDespacho = fechaDespacho;
+		this.direccionOrigen = direccionOrigen;
+		this.direccionDestino = direccionDestino;
+		this.peso = peso;
+	}
+	
+	public abstract double montoAPagar();
+}

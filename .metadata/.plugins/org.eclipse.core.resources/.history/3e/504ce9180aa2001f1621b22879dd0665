@@ -1,0 +1,10 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+public class Conductor extends Usuario {
+	private Vehiculo vehiculo;
+
+	@Override
+	public void descontarSueldo(double costo) {
+		this.saldo -= costo - 0.1 * vehiculo.getValorMercado();
+	}
+}

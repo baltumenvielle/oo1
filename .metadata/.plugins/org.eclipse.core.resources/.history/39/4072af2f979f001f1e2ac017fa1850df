@@ -1,0 +1,9 @@
+package ar.edu.unlp.info.oo1.ej20_liquidacion;
+
+import java.time.LocalDate;
+
+public class ContratoPorHoras {
+	private LocalDate fechaFin;
+	private double valorHora;
+	private int horas;
+}

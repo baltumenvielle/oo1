@@ -1,0 +1,17 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+public class Conductor extends Usuario {
+	private Vehiculo vehiculo;
+
+	@Override
+	public void descontarSaldo(double costo) {
+		this.saldo -= costo - 0.1 * vehiculo.getValorMercado();
+	}
+
+	@Override
+	public void calcularComision(double comision) {
+		if (vehiculo.getAñoFabricacion() < 5) comision = saldo * 0.01;
+		else comision = saldo * 0.1;
+		this.saldo += saldo - comision;
+	}
+}

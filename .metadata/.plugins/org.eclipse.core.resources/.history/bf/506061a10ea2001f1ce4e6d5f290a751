@@ -1,0 +1,5 @@
+package ar.edu.unlp.objetos.uno.ej23_mercadoObjetos;
+
+public interface FormasDePago {
+	abstract double precioFinal(double precio);
+}

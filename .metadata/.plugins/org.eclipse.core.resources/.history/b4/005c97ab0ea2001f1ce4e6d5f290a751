@@ -1,0 +1,10 @@
+package ar.edu.unlp.objetos.uno.ej23_mercadoObjetos;
+
+public class RetirarSucursal implements FormasDeEnvio {
+
+	@Override
+	public double costoEnvio() {
+		return 3000;
+	}
+
+}

@@ -1,0 +1,24 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+import java.time.LocalDate;
+
+public class Conductor extends Usuario {
+	
+	private Vehiculo vehiculo;
+	
+	public Conductor(String nombre, double saldo) {
+		super(nombre, saldo);
+		this.vehiculo = vehiculo;
+	}
+
+	@Override
+	public double calcularBonificacion() {
+		return this.vehiculo.getValorMercado() * 0.1;
+	}
+
+	@Override
+	public double calcularComision(double monto) {
+		if (LocalDate.now().getYear() - vehiculo.getAñoFabricacion() < 5) return monto * 0.01;
+		return monto * 0.1;
+	}
+}

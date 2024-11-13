@@ -6,6 +6,14 @@ public class Vehiculo {
 	private int capacidad, añoFabricacion;
 	private double valorMercado;
 	
+	public Vehiculo(Conductor dueño, String descripcion, int capacidad, int añoFabricacion, double valorMercado) {
+		this.dueño = dueño;
+		this.descripcion = descripcion;
+		this.capacidad = capacidad;
+		this.añoFabricacion = añoFabricacion;
+		this.valorMercado = valorMercado;
+	}
+
 	public Conductor getDueño() {
 		return dueño;
 	}

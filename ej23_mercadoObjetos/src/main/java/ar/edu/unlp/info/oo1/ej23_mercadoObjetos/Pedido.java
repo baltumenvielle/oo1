@@ -32,6 +32,6 @@ public class Pedido {
 	}
 
 	public double calcularCostoTotal() {
-		return formaPago.precioFinal(producto.getPrecio()) + formaEnvio.costoEnvio();
+		return formaPago.precioFinal(producto.getPrecio()) + formaEnvio.costoEnvio() * cantidad;
 	}
 }

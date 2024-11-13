@@ -1,0 +1,15 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class PasajeroTest {
+	private Pasajero p;
+	
+	@BeforeEach
+	void setUp() {
+		p = new Pasajero("Baltazar", 2300);
+	}
+}

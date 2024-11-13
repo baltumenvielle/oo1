@@ -1,0 +1,12 @@
+package ar.edu.unlp.info.oo1.ej24_poolCar;
+
+import org.junit.jupiter.api.BeforeEach;
+
+public class VehiculoTest {
+	private Vehiculo v;
+	
+	@BeforeEach
+	void setUp() {
+		
+	}
+}

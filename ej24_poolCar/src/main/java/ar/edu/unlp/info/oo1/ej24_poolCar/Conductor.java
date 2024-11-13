@@ -4,14 +4,23 @@ import java.time.LocalDate;
 
 public class Conductor extends Usuario {
 	private Vehiculo vehiculo;
+	
+	public Conductor(String nombre, double saldo, Vehiculo vehiculo) {
+		super(nombre, saldo);
+		this.vehiculo = vehiculo;
+	}
 
-	@Override
-	public void descontarSaldo(double costo) {
-		this.saldo -= costo - 0.1 * vehiculo.getValorMercado();
+	public Vehiculo getVehiculo() {
+		return this.vehiculo;
 	}
 
 	@Override
-	public double calcularComision(double monto) {
+	protected double calcularBonificacion() {
+		return this.vehiculo.getValorMercado() * 0.1;
+	}
+
+	@Override
+	protected double calcularComision(double monto) {
 		if (LocalDate.now().getYear() - vehiculo.getAñoFabricacion() < 5) return monto * 0.01;
 		return monto * 0.1;
 	}

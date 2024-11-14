@@ -34,10 +34,12 @@ public class Viaje {
 		return LocalDate.now().isBefore(fechaViaje.minusDays(2)) && this.hayCapacidad();
 	}
 	
-	public void agregarPasajero(Pasajero pasajero) {
+	public boolean agregarPasajero(Pasajero pasajero) {
 		if (this.sePuedeRealizar()) {
 			pasajeros.add(pasajero);
+			return true;
 		}
+		return false;
 	}
 	
 	public void procesarViaje() {

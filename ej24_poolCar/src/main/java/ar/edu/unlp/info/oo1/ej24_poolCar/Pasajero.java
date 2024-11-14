@@ -15,9 +15,15 @@ public class Pasajero extends Usuario {
 	public List<Viaje> getViajes() {
 		return this.viajes;
 	}
+	
+	private void agregarViaje(Viaje viaje) {
+		viajes.add(viaje);
+	}
 
 	public void registrarseAViaje(Viaje viaje) {
-		if (this.saldo > 0) viaje.agregarPasajero(this);
+		if (this.saldo > 0) {
+			if (viaje.agregarPasajero(this)) this.agregarViaje(viaje);
+		}
 	}
 	
 	private boolean hizoViajes() {
